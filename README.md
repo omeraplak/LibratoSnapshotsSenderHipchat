@@ -1,6 +1,11 @@
 # LibratoSnapshotsSenderHipchat
 Librato metric snapshot sender to hipchat
 
+## Requirements
+
+* Python HipChat (pip install python-simple-hipchat)
+* Requests (pip install requests)
+
 
 # Usage
 
