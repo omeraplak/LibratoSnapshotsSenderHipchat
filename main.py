@@ -18,7 +18,7 @@ def main(**kwargs):
     snapshotRequest = requests.post(url, params=params, auth=(arg['username'], arg['password']))
 
     if snapshotRequest.status_code == 401:
-        print("Not Authrozied Librato")
+        print("Not Authorized Librato")
         sys.exit(2)
 
     snapshotRequestResponse = json.loads(snapshotRequest.text)
