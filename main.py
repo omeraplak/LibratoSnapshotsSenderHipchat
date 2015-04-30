@@ -3,7 +3,6 @@ import sys
 import argparse
 import os
 import requests
-import re
 import hipchat
 import time
 __author__ = 'omeraplak'
@@ -12,8 +11,6 @@ __author__ = 'omeraplak'
 def main(**kwargs):
     global arg
     arg = kwargs
-    print(arg['username'])
-    print(arg['password'])
 
     hipster = hipchat.HipChat(token=arg['hipchattoken'])
     params = {'duration': arg['duration'], 'subject[chart][id]': arg['chartid'], 'subject[chart][source]':'', 'subject[chart][type]':arg['charttype']}
